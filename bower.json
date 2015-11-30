@@ -1,0 +1,34 @@
+{
+  "name": "dsp",
+  "homepage": "https://github.com/t0rrro/dsp",
+  "authors": [
+    "Mikel Santos <msantos@wolfram.com>",
+    "Jack Shea <jshea@illinideltasigs.org>"
+  ],
+  "description": "marketing site",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "delta",
+    "sigma",
+    "phi",
+    "fraternity",
+    "university",
+    "illinois"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.11.4",
+    "angular-route": "~1.4.8",
+    "angular": "~1.4.8",
+    "gsap": "~1.18.0"
+  }
+}

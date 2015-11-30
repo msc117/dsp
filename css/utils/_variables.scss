@@ -1,0 +1,23 @@
+// colors
+$dark-gray: #212121;
+$light-gray: #757575;
+$tinted-white: tint(white, 20%);
+$accent-hue-1: #009688;
+$accent-hue-2: #BF360C;
+$green: #388E3C;
+
+// content spacing
+$content-spacing-top: 80px;
+$content-spacing-top-sm: 20px;
+$content-spacing-bottom: 60px;
+$content-spacing-bottom-sm: 40px;
+
+// box shadows
+$hover-box-shadow: 0 4px 4px rgba(0,0,0,0.24),0px 0 4px rgba(0,0,0,0.12),0px 6px 18px rgba(2,98,194,0.12);
+
+// breakpoint map
+$breakpoints: (
+	'small' : 600px,
+	'medium': 960px,
+	'large' : 1200px
+);
