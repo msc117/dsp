@@ -14,6 +14,8 @@ module dsp {
 		) {
 			this._$scope = $scope;
 			
+			console.log('in base ctrl');
+			
 			$scope.$on('$destroy', this.destruct);
 		}
 		
