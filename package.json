@@ -24,16 +24,23 @@
     "url": "https://github.com/t0rrro/dsp/issues"
   },
   "homepage": "https://github.com/t0rrro/dsp#readme",
+  "dependencies": {
+    "gulp-bower": "^0.0.11"
+  },
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "connect-modrewrite": "^0.8.2",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-sass": "^2.1.0",
+    "gulp-if": "^2.0.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-typescript": "^2.9.2",
-    "gulp-uglify": "^1.5.1",
-    "yargs": "^3.30.0"
+    "gulp-typescript": "^2.10.0",
+    "gulp-uglify": "^1.4.2",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "yargs": "^3.31.0"
   }
 }
