@@ -19,7 +19,7 @@ if (nosourcemaps)
    process.stdout.write("-- generating static files with no sourcemaps -- \n");
    
 var cssPaths  = ['css/*.scss', 'css/*.css'],
-    jsPaths   = ['js/**/*.ts', '!js/dist/*.js'],
+    jsPaths   = ['js/**/*.ts', 'js/**/*.js', '!js/dist/*.js'],
     htmlPaths = ['*.html', 'templates/**/*.html'],
     templates = ['templates/**/*.html'];
 
@@ -67,7 +67,7 @@ gulp.task('jshint', function () {
 gulp.task('default', ['bowerInstall', 'css', 'jshint', 'js']);
 
 // run browser-sync server and watch for sass changes
-gulp.task('serve', ['css', 'js'], function () {
+gulp.task('serve', ['default'], function () {
   	browserSync.init({
       server: {
          baseDir: "./",

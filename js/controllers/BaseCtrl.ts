@@ -12,19 +12,11 @@ module dsp {
 		constructor(
 			$scope: IDspScope
 		) {
-			this._$scope = $scope;
-			
 			console.log('in base ctrl');
-			
-			$scope.$on('$destroy', this.destruct);
 		}
 		
 		// #region private helpers
 		private _$scope: IDspScope;
-		
-		private destruct() {
-			this._$scope = null;
-		}
 		// #endregion
 	}
 }

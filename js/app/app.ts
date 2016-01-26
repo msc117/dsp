@@ -3,8 +3,8 @@
 // typed application setup
 module dsp {
 	'use strict';
-	
+
 	var app = angular.module('dsp', ['ngAria', 'ngAnimate', 'ngMaterial', 'ngRoute'])
-		.config(Routes.generate())
+		.config(Config.init())
 		.controller('baseCtrl', BaseCtrl);
 }
