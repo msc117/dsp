@@ -1,27 +1,144 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="dsp">
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Illini Delta Sigs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-   <meta name="theme-color" content="#388E3C">
-   <base href="/">
-   <title>Delta Sigma Phi - Alpha Alpha</title>
-   <link async href="bower_components/angular-material/angular-material.min.css" rel="stylesheet">
-   <link async href="css/dist/all.min.css" rel="stylesheet">
-</head>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-<body ng-controller="baseCtrl">
-   <main ng-view id="page-content"></main>
-   <footer layout="row" layout-sm="column" ng-if="footer"></footer>
-   <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
-   <script src="bower_components/angular/angular.js"></script>
-   <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-   <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-   <script src="bower_components/angular-route/angular-route.min.js"></script>
-   <script src="bower_components/angular-material/angular-material.min.js"></script>
-   <script src="js/dist/all.min.js"></script>
-</body>
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">
+                upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
+        <div id="emptyFiller"></div>
+
+        <div >
+            <ul id="topBanner">
+                <li><a id="homeLink"><img src="img/logo_crest.png"></a></li>
+                <li><a id="aboutLink" class="textItem">About</a></li>
+                <li><a id="FAQLink" class="textItem">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div id="splashText">
+            <div id="splashTextInner">
+                <div id="text1"><h1><bold>Better Men.
+                <div id="offsetText">Better Lives.</div>
+                <div id="offsetImage">&Delta;&Sigma;&Phi; - &Alpha;&Alpha;</bold></h1></div>
+            </div>
+        </div>
+
+        <div id="filler"></div>
+
+        <div id="aboutSection">
+            <img id="aboutImage" src="img/about_image.jpg">
+            <div id="textContainer">
+                <h1>Why Delta Sigs?</h1>
+                <h3>A Message From Our President</h3>
+                <p>Dear New College Student:
+                <p>The Delta Sigma Phi Fraternity is a group of men who strive to make themselves and those around
+                    them better. To do this we focus on three main parts of all of our lives: the elevation of academic thought,
+                    working together for the common good, and promoting friendship within and outside the organization as well
+                    as across time through events with alumni. All of our resources are directed toward accomplishing these goals.</p>
+                <p>There are many stereotypes that are associated with fraternities and the Greek system in general. However, as
+                    is true with all stereotypes, many of these are gross generalizations or are simply false. One of these stereotypes
+                    is hazing. While some Greek organizations haze, Delta Sigma Phi is absolutely committed to not hazing its members.
+                    Further hazing does not propagate the environment of respect and mutual friendship that Delta Sigma Phi seeks to elevate.</p>
+                <p>Another of these stereotypes is that all fraternity men only party and drink. While we do have social events within the
+                    brotherhood and sororities on campus, we seek to promote a balanced lifestyle for all of our members. As a chapter we
+                    pride ourselves in the countless hours of community service and our stellar average chapter GPA which is well above the
+                    all mens undergraduate average of 3.03. We also participate in Intramural football, soccer, We believe that there is a
+                    place for all activities in our lives, allowing the Brothers to get the most out of their college experience.</p>
+                <p>But, I know that just by telling you about my organization, you may not fully believe me. We invite you to our house for
+                    barbecues, tailgates and other social gatherings to meet the brothers and experience the life as a Delta Sigma Phi.</p>
+                <p>Sincerely yours,</p>
+                <p>Isaac Narayan</p>
+                <p>President, Delta Sigma Phi Fraternity Alpha Alpha Chapter</p>
+            </div>
+        </div>
+
+        <div id="FAQSection">
+            <p><h1>Frequently Asked Questions</h1></p>
+            <br><b>How does joining a fraternity help me in college?</b>
+            <br>This question is by far the most common and also the hardest to answer.
+                The benefits of a fraternity are based upon what your son wants to put into it.
+            <br><br><b>Will my academics be affected?</b>
+            <br>Delta Sigma Phi is a wealth of academic knowledge. Whether it be access to a computer labs,
+                academic files, and other brothers  who have already taken the classes, you will never be alone
+                in his academic pursuits. No matter the major, you will have at least one other brother who shares his major and
+                can offer advice and advising on classes, teachers, and studying tips. This past semester Delta Sigma Phi ranked above
+                the all fraternity average with a house GPA of 3.14.
+            <br><br><b>How will I become a part of the community?</b>
+            <br>First of all, the University of Illinois has one of the biggest Greek system in the nation. With over 40 fraternities
+                on campus, we are glad that you chose Delta Sigma Phi. A great aspect of joining a fraternity is the ability for you
+                to get involved in something bigger than yourself. As a member of Delta Sigma Phi, you are required to complete service
+                hours, get involved in philanthropy events, play intramural sports in the Fraternity league, and are strongly encouraged
+                to get involved in clubs outside of the fraternity itself. Members of Delta Sigma Phi come from diverse backgrounds and
+                have varying interests in both life and academics. Inside the fraternity various leadership roles help boost resumes and
+                provide invaluable experience for you.
+            <br><br><b>How is the Delta Sig brotherhood?</b>
+            <br>One of the greatest things about being in a fraternity are the relationships you will form with the other brothers.
+                Whether it hanging out and watching a football game on the big screen, going to Assembly Hall to cheer on the Illini
+                basketball team, heading to the ARC or the outdoor athletic complex for a pickup game or even staying up until 3:00 AM
+                to simply have a talk about the world, the relationships you form will most be the strongest ones you will form in your
+                lifetime.
+            <br><br><b>What do dues pay for?</b>
+            <br>Upon joining a fraternity, you will be required to pay semester dues which allow us to function as an organization.
+                The majority of the dues paid go to our national organization which provides us with a variety of conferences, seminars,
+                and leadership programs. The remainder of our dues go towards community service, philanthropy events, athletic teams,
+                maintaining our house, brotherhood events like our annual camping trip, and social events such as exchanges with
+                sororities and a formal dance.
+            <br><br><b>How big of a time commitment is there?</b>
+            <br>One of the biggest concerns you probably have is the issue of time management. How are you supposed to balance getting
+                good grades with being social and being involved in various campus activities? While academics take up the majority of
+                our time on campus, the fraternity only takes up what you want it to. On an official level, we have a chapter meeting
+                every week on Monday evenings right after dinner at 6:00. This allows plenty of time afterwards for studying and homework.
+                Other than that, there is no required time to be spent at the house or at fraternity events, and the majority of brothers
+                who don’t live in house come over when they are free and not busy with school work.
+            <br><br><b>If I have a big test, am I allowed to skip fraternity events?</b>
+            <br>You are here at the University of Illinois as a student first, fraternity member second. We make sure that all of our
+                pledges and brothers know that and are reprimanded if he doesn't meed standards on exec board.
+            <br><br><b>Does living in house offer any type of structure? Are there people responsible for the house?</b>
+            <br>We at Delta Sigma Phi have a great house mom, Christie Singer. Christie prepares our meals for us Monday
+                through Friday at lunch, and is always just a phone call away in the case of an emergency. Other than simply preparing meals,
+                Christie acts as our mom making sure we do our chores and focus on grades. Often times she will sit down with us at lunch and
+                talk about what is going on in the world and any struggles or issues we may be experiencing.
+            <br><br><b>What is the policy on hazing?</b>
+            <br>We pride ourselves in NOT hazing our pledges.
+            <br><br><b>What are the expenses?</b>
+            <br>Refer to this page.
+            <br><br><b>Have more questions?</b>
+            <br>If you have any other questions, please feel free to contact satkinson@illinideltasigs.org.
+        </div>
+
+        <div id="footer">
+            <img id="footerLogo" src="img/delta-sigma-phi.png">
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
