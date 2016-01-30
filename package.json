@@ -25,12 +25,13 @@
   },
   "homepage": "https://github.com/t0rrro/dsp#readme",
   "dependencies": {
-    "gulp-bower": "^0.0.11"
+    "gulp-bower": "^0.0.13"
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "connect-modrewrite": "^0.8.2",
     "gulp": "^3.9.0",
+    "gulp-angular-templatecache": "^1.8.0",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^2.0.0",
     "gulp-cssnano": "^2.1.0",

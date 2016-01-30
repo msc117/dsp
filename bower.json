@@ -26,9 +26,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "^1.0.3",
+    "angular-material": "^1.0.4",
     "angular-route": "^1.4.9",
-    "angular": "^1.4.9",
-    "gsap": "~1.18.2"
+    "angular": "^1.4.9"
   }
 }

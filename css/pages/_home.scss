@@ -1,0 +1,52 @@
+div#hero {
+    height: 100vh;
+    max-width: 100%;
+    @include transform(scale(1.03));
+    > img {
+        height: auto;
+        min-width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        @include filter(blur(5px));
+    }
+}
+
+div#intro-text {
+    color: #313131;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include respond-to($to: 'small') {
+        top: 20%;
+        left: 15px;
+        right: 10%;
+        text-align: right;
+    }
+}
+
+$image-height: 145px;
+$image-width: 475px;
+#logo {
+    @include position(absolute, 45% null null 45%);
+    margin-top: -$image-height/2;
+    margin-left: -$image-width/2;
+    @include respond-to($to: 'small') {
+        margin: 0;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+    }
+}
+
+header#navigation {
+    @include position(absolute, null 0 0 0);
+    background-color: $dark-gray;
+    opacity: .8;
+    #actions { width: 100% }
+    #address {
+        line-height: 1em;
+        padding: 5px 15px;
+        width: 165px;
+        @include respond-to($from: 'small') { text-align: right }
+    }
+}

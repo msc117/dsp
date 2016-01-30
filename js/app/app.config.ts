@@ -16,6 +16,12 @@ module dsp {
                     templateUrl: 'templates/home.html',
                     controller: 'baseCtrl'
                 })
+                .when('/about', {
+                    templateUrl: 'templates/about.html'
+                })
+                .when('/faq', {
+                    templateUrl: 'templates/faq.html'
+                })
                 .when('/404', {
                     templateUrl: 'templates/404.html'
                 })
@@ -31,44 +37,42 @@ module dsp {
 
             $locationProvider.html5Mode(true);
             
-            // TODO correct colors
             // #region angular material theming
             var customPrimary = {
-                '50': '#2afffe',
-                '100': '#11fffe',
-                '200': '#00f6f5',
-                '300': '#00dddc',
-                '400': '#00c3c2',
-                '500': '#00aaa9',
-                '600': '#009090',
-                '700': '#007776',
-                '800': '#005d5d',
-                '900': '#004444',
-                'A100': '#44fffe',
-                'A200': '#5dfffe',
-                'A400': '#77fffe',
-                'A700': '#002a2a',
-                'contrastDefaultColor': 'light'
+                '50': '#59d893',
+                '100': '#44d386',
+                '200': '#31cd78',
+                '300': '#2cb86c',
+                '400': '#27a460',
+                '500': '#228F54',
+                '600': '#1d7a48',
+                '700': '#18663c',
+                '800': '#135130',
+                '900': '#0e3d24',
+                'A100': '#6edca0',
+                'A200': '#82e1ae',
+                'A400': '#97e6bb',
+                'A700': '#0a2817'
             };
             $mdThemingProvider
                 .definePalette('customPrimary',
                 customPrimary);
 
             var customAccent = {
-                '50': '#c2accf',
-                '100': '#b79cc6',
-                '200': '#ab8cbd',
-                '300': '#9f7cb3',
-                '400': '#936baa',
-                '500': '#875ca0',
-                '600': '#795390',
-                '700': '#6c4980',
-                '800': '#5e406f',
-                '900': '#50375f',
-                'A100': '#cebcd9',
-                'A200': '#dacde2',
-                'A400': '#e6ddeb',
-                'A700': '#432d4f'
+                '50': '#03b788',
+                '100': '#039e75',
+                '200': '#028563',
+                '300': '#026c50',
+                '400': '#01533e',
+                '500': '#013A2B',
+                '600': '#012118',
+                '700': '#000806',
+                '800': '#000000',
+                '900': '#000000',
+                'A100': '#04d09a',
+                'A200': '#04e9ad',
+                'A400': '#0cfbbc',
+                'A700': '#000000'
             };
             $mdThemingProvider
                 .definePalette('customAccent',
@@ -95,33 +99,24 @@ module dsp {
                 customWarn);
 
             var customBackground = {
-                '50': '#626b8d',
-                '100': '#58607e',
-                '200': '#4d546f',
-                '300': '#434960',
-                '400': '#383d51',
-                '500': '#2E3242',
-                '600': '#242733',
-                '700': '#191b24',
-                '800': '#0f1015',
-                '900': '#040406',
-                'A100': '#6f779a',
-                'A200': '#7e85a5',
-                'A400': '#8d94af',
-                'A700': '#000000',
-                'contrastDefaultColor': 'light'
+                '50': '#616161',
+                '100': '#545454',
+                '200': '#474747',
+                '300': '#3a3a3a',
+                '400': '#2e2e2e',
+                '500': '#212121',
+                '600': '#141414',
+                '700': '#070707',
+                '800': '#000000',
+                '900': '#000000',
+                'A100': '#6d6d6d',
+                'A200': '#7a7a7a',
+                'A400': '#878787',
+                'A700': '#000000'
             };
             $mdThemingProvider
                 .definePalette('customBackground',
                 customBackground);
-				
-            // define dark theme
-            // TODO better color contrast with background color
-            $mdThemingProvider.theme('dark')
-                .primaryPalette('customPrimary')
-                .accentPalette('customAccent')
-                .warnPalette('customWarn')
-                .backgroundPalette('customBackground');
 			
             // define default theme
             $mdThemingProvider.theme('default')
