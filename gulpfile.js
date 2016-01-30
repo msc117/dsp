@@ -86,7 +86,7 @@ gulp.task('serve', ['default'], function () {
             middleware: [
                 // angular html5 mode apache rewrite
                 modRewrite([
-                    '!\\.\\w+$ /index.html [L]'
+                    '^[^\\.]*$ /index.html [L]'
                 ])
             ]
         }
