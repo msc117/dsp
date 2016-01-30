@@ -6,17 +6,19 @@ module dsp {
 	// typed base controller
 	export class BaseCtrl {
 		public static $inject = [
-			'$scope'
+			'$scope',
+            '$rootScope'
 		];
 		
 		constructor(
-			$scope: IDspScope
+			private $scope: IDspScope,
+            private $rootScope: IDspRoot
 		) {
+            $rootScope.hideFooter = true;
 			console.log('in base ctrl');
 		}
 		
 		// #region private helpers
-		private _$scope: IDspScope;
 		// #endregion
 	}
 }

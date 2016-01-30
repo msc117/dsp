@@ -6,19 +6,21 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
    <meta name="theme-color" content="#388E3C">
-   <base href="/">
    <title>Delta Sigma Phi - Alpha Alpha</title>
    <link async href="bower_components/angular-material/angular-material.min.css" rel="stylesheet">
    <link async href="css/dist/all.min.css" rel="stylesheet">
+   <base href="/">
 </head>
 
 <body ng-controller="baseCtrl">
    <main ng-view id="page-content"></main>
    <footer layout="row" layout-xs="column"
-        layout-align="space-between center">
+        layout-align="space-between center"
+        ng-class="{'hidden': hideFooter}">
        <img src="img/logo.png">
-       <a href="https://www.google.com/maps/place/105+E+Armory+Ave,+Champaign,+IL+61820">
-       105 E Armory<br>
+       <a class="small"
+       href="https://www.google.com/maps/place/105+E+Armory+Ave,+Champaign,+IL+61820">
+       105 E. Armory<br>
        Champaign, IL, 61820<br>
        USA
        </a>
